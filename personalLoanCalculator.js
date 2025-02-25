@@ -24,6 +24,6 @@ function result(){
     var n=document.getElementById('numberOfYears').value;
     var N=n*12;
     var result=(P*R*Math.pow(1+R,N))/((Math.pow(1+R,N))-1);
-    document.getElementById('finalResult').innerHTML="<span>Your Monthly EMI will be <span><b><font color=blue>"+"<i>&#8377</i>"+parseInt(result)+" </font></b></span><span>Per Month.</span>";
+    document.getElementById('finalResult').innerHTML="<span>Your Monthly EMI will be<span><b><font color=blue>"+" "+"<i>&#8377</i>"+parseInt(result)+" "+"</font></b></span><span>Per Month.</span>";
     console.log(parseInt(result))
 }
