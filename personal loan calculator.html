@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal loan calculator</title>
+    <link rel="stylesheet" href="personal loan calculator.css">
+    <script src="personal loan calculator.js"></script>
+</head>
+<body id=bodyContainer>
+    <div class="mainContainer">
+        <div class="inputContainer">
+            <div class="inputFields">
+                <div><span>Amount you need </span><input type="" name="loanAmount" id="loanAmount" onchange="loanAmountText()" value="50000"></div>
+                <div><span>50000</span><input type="range" min="50000" max="5000000" name="loanAmount" step="50000" value="50000" onchange="loanAmountRange()" id="loanAmountRange"><span>5000000</span></div>
+            </div>
+            <div class="inputFields">
+                <div><span>for</span><input type="text" id="numberOfYears" onchange="numberOfYears()" name="numberofyears" value="1"><span>years</span></div>
+                <div><span>1 Year</span><input type="range" min="1" max="5" step="1" name="numberofyears" id="numberofyearsRange" onchange="numberofyearsRange()" value="1"><span>5 Years</span></div>
+            </div>
+            <div class="inputFields">
+                <div><span>Interest rate</span><input type="text" name="interestRate" id="interestRate" onchange="interestRate()" value="8.00"><span>%</span></div>
+                <div><span>8.00%</span><input type="range" min="8.00" max="21.00" step="0.5" name="interestRate" id="interestRateRange" onchange="interestRateRange()" value="8.0"><span>21%</span></div>
+            </div>
+        </div>
+        <div class="calculateContainer"><button onclick="result()">Calculate</button></div>
+        <div class="resultContainer">
+            <p id="finalResult"></p>
+        </div>
+    </div>
+</body>
+</html>

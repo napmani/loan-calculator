@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    border: 2px solid;
+    width: 900px;
+    height: 300px;
+}
+.inputContainer{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inputFields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2px;
+}
+.calculateContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(10, 37, 78);
+    color: white;
+    border: none;
+}
+.resultContainer{
+    margin: 50px;
+}
